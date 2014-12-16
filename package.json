@@ -1,0 +1,22 @@
+{
+  "name": "angular-bootstrap-npm",
+  "version": "0.1.0",
+  "description": "npm module for angular's ui.bootstrap",
+  "main": "dist/angular-bootstrap.js",
+  "author": "jusopi <jwopitz@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-exec": "^2.1.1",
+    "gulp-insert": "^0.4.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-rimraf": "^0.1.1",
+    "gulp-shell": "^0.2.11",
+    "run-sequence": "^1.0.2",
+    "yargs": "^1.3.3"
+  },
+  "dependencies": {
+    "napa": "~0.4.1",
+    "npm": "^1.4.20"
+  }
+}
