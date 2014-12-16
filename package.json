@@ -1,38 +1,46 @@
 {
   "name": "angular-bootstrap-npm",
   "version": "0.12.0",
-  "description": "An NPM package for using Angular's UI.Bootstrap directives w/ Node projects (via Browserify, etc.)",
-  "main": "dist/angular-bootstrap.js",
-  "author": "jusopi <jwopitz@gmail.com>",
-  "license": "MIT",
+  "description": "An NPM package for using UI.Bootstrap directives with Node projects (via Browserify, etc.)",
+  "main": "./dist/angular-bootstrap.js",
   "devDependencies": {
-    "gulp": "^3.8.7",
     "gulp-exec": "^2.1.1",
-    "gulp-insert": "^0.4.0",
-    "gulp-rename": "^1.2.0",
+    "yargs": "^1.3.3",
+    "gulp": "^3.8.10",
     "gulp-rimraf": "^0.1.1",
     "gulp-shell": "^0.2.11",
     "run-sequence": "^1.0.2",
-    "yargs": "^1.3.3"
+    "gulp-insert": "^0.4.0",
+    "gulp-rename": "^1.2.0"
   },
   "dependencies": {
-    "napa": "~0.4.1",
-    "npm": "^1.4.20"
+    "napa": "^0.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Neohapsis/angular-bootstrap-npm.git"
   },
   "keywords": [
     "npm",
     "module",
-    "angular",
-    "bootstrap",
-    "ui.bootstrap",
-    "ui-bootstrap",
-    "ng",
-    "anuglar-bootstrap",
     "browserify",
-    "commonjs"
+    "angular",
+    "commonjs",
+    "javascript",
+    "js",
+    "ng",
+    "bootstrap",
+    "ui-bootstrap",
+    "ui.bootstrap",
+    "directives"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Neohapsis/angular-bootstrap-npm"
-  }
+  "author": "jusopi <jwopitz@gmail.com> (http://jwopitz.wordpress.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Neohapsis/angular-bootstrap-npm/issues"
+  },
+  "homepage": "https://github.com/Neohapsis/angular-bootstrap-npm"
 }
