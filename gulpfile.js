@@ -32,7 +32,7 @@ gulp.task( 'build-bootstrap', function()
 		.pipe( exec( 'napa angular-ui/bootstrap' + ver + ':_tmp && ' +  //use napa to pull from git and store into our app, we could bypass napa and just go git
 					 'cd ./node_modules/_tmp && ' +
 					 'npm install && ' + //install deps to build the distros
-					 'grunt after-test' ) ) //skipping full test suite since we assume they don't publish broken builds (or do they DUH DUH DUHHHHHH)
+					 'grunt --force' ) ) //force the build in case they don't have an env var for CHROME_BIN
 } )
 
 gulp.task( 'package', function()

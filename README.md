@@ -15,6 +15,8 @@ In order to build against a different version you can run the gulp build w/ a ve
 
 `gulp --ver=0.12.0`
 
+One thing to note is that your command line may act unresponsive as the build process for ui.bootstrap is quite extensive.  Also it may open a browser window during testing.
+
 ## usage
 
 **example**
