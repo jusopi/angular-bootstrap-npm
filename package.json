@@ -1,6 +1,6 @@
 {
   "name": "angular-bootstrap-npm",
-  "version": "0.1.0",
+  "version": "0.12.0",
   "description": "An NPM package for using Angular's UI.Bootstrap directives w/ Node projects (via Browserify, etc.)",
   "main": "dist/angular-bootstrap.js",
   "author": "jusopi <jwopitz@gmail.com>",
@@ -31,8 +31,8 @@
     "browserify",
     "commonjs"
   ],
-  "repository":{
-    "type":"git",
+  "repository": {
+    "type": "git",
     "url": "https://github.com/Neohapsis/angular-bootstrap-npm"
   }
 }
