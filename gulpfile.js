@@ -16,6 +16,10 @@ _comma   = 'commafix: tired of the hassle of remembering to add/remove a comma f
 //	TASKS
 ///////////////////////
 
+var ver = argv.ver ? '#' + argv.ver : '';
+var vs = ver || 'latest';
+console.log( 'version: ', vs )
+
 gulp.task( 'init', function()
 {
 	return gulp.src( [ './dist' ], { read: false } )
@@ -24,9 +28,6 @@ gulp.task( 'init', function()
 
 gulp.task( 'build-bootstrap', function()
 {
-	var ver = argv.ver ? '#' + argv.ver : '';
-	console.log( 'version: ', ver || 'latest' )
-
 	return gulp.src( '' )
 		.pipe( exec( 'napa angular-ui/bootstrap' + ver + ':_tmp && ' +  //use napa to pull from git and store into our app, we could bypass napa and just go git
 					 'cd ./node_modules/_tmp && ' +
@@ -37,7 +38,7 @@ gulp.task( 'build-bootstrap', function()
 gulp.task( 'package', function()
 {
 	return gulp.src( [ './node_modules/_tmp/dist/ui-bootstrap-tpls-*.js' ] )
-		.pipe( insert.append( 'module.exports = {};' ) ) //just making this compatible with common-js packages for use w/ browserify
+		.pipe( insert.append( 'module.exports={ver:\'' + vs + '\'};' ) ) //just making this compatible with common-js packages for use w/ browserify
 		.pipe( gulp.dest( './tmp' ) )
 } )
 
