@@ -22,7 +22,13 @@ One thing to note is that your command line may act unresponsive as the build pr
 **example**
 
 ```javascript
-require('angular-bootstrap-npm');
+require( 'angular-bootstrap-npm' );
+
+angular.module( 'app', [ 'ui.bootstrap' ]);
+
+//you can also use the module as the module name, e.g.
+
+angular.module( 'app', [ require( 'angular-bootstrap-npm' )])
 ```
 
 ## license
