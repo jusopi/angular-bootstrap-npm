@@ -38,7 +38,7 @@ gulp.task( 'build-bootstrap', function()
 gulp.task( 'package', function()
 {
 	return gulp.src( [ './node_modules/_tmp/dist/ui-bootstrap-tpls-*.js' ] )
-		.pipe( insert.append( 'module.exports={ver:\'' + vs + '\'};' ) ) //just making this compatible with common-js packages for use w/ browserify
+		.pipe( insert.append( 'if(typeof module!==\'undefined\')module.exports=\'ui.bootstrap\';' ) ) //just making this compatible with common-js packages for use w/ browserify
 		.pipe( gulp.dest( './tmp' ) )
 } )
 
