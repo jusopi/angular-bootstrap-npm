@@ -29,15 +29,6 @@ gulp.task( 'init', function()
 		.pipe( rimraf( { force: true } ) );
 } )
 
-gulp.task( 'build-bootstrap', function()
-{
-	return gulp.src( '' )
-		.pipe( exec( 'napa angular-ui/bootstrap' + ver + ':_tmp && ' +  //use napa to pull from git and store into our app, we could bypass napa and just go git
-					 'cd ./node_modules/_tmp && ' +
-					 'npm install && ' + //install deps to build the distros
-					 'grunt --force' ) ) //force the build in case they don't have an env var for CHROME_BIN
-} )
-
 gulp.task( 'curl', function()
 {
 	src = src || './tmp'
@@ -85,6 +76,5 @@ gulp.task( 'clean', function()
 //	DEFAULT
 ///////////////////////
 
-gulp.task( 'default', function() { seq( 'init', 'build-bootstrap', 'package', 'rename', 'clean' ); } )
 
-gulp.task( 'manual', function() { seq( 'init', 'curl', 'package', 'rename', 'clean' );} )
+gulp.task( 'default', function() { seq( 'init', 'curl', 'package', 'rename', 'clean' );} )
