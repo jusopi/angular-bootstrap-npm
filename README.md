@@ -1,21 +1,10 @@
-# note
+#### update - Oct 10, 2015
+
+*This repo has been relocated to [jusopi/angular-bootstrap-npm](https://github.com/jusopi/angular-bootstrap-npm)*
+
+# angular-bootstrap-npm
 
 This is a simple NPM package wrapper for http://angular-ui.github.io/bootstrap
-
-## building
-
-In order to run the build process, you'll need to have npm, gulp installed globally.  Then install the project dependencies.
-
-**install npm dependecies**
-
-`npm install`
-
-While the intent is to maintain pairity with the various tags/versions found at https://github.com/angular-ui/bootstrap, you may want to build/modify your own version.
-In order to build against a different version you can run the gulp build w/ a version argument: 
-
-`gulp --ver=0.12.0`
-
-One thing to note is that your command line may act unresponsive as the build process for ui.bootstrap is quite extensive.  Also it may open a browser window during testing.
 
 ## usage
 
@@ -29,6 +18,35 @@ angular.module( 'app', [ 'ui.bootstrap' ]);
 //you can also use the module as the module name, e.g.
 
 angular.module( 'app', [ require( 'angular-bootstrap-npm' )])
+```
+
+#### using the HTML template files
+
+The default project file utilizes ui.bootstrap's build that includes the directive templates via `$templateCache`.  If for some reason you want direct access to the template HTML files, you can do the following:
+
+**example**
+
+```javascript
+//this file doesn't make use of angular's $templateCache
+require( 'angular-bootstrap-npm/dist/angular-bootstrap.js')
+```
+
+## building
+
+In order to run the build process, you'll need to have npm, gulp installed globally.  Then install the project dependencies.
+
+**install npm dependecies**
+
+`npm install`
+
+While the intent is to maintain pairity with the various tags/versions found at https://github.com/angular-ui/bootstrap, you may want to build/modify your own version.
+In order to build against a different version you can run the gulp build w/ a version argument: 
+
+`gulp --ver=0.14.0`
+
+One thing to note is that your command line may act unresponsive as the build process for ui.bootstrap is quite extensive.  Also it may open a browser window during testing.
+
+
 ```
 
 ## license
