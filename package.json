@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Neohapsis/angular-bootstrap-npm.git"
+    "url": "https://github.com/jusopi/angular-bootstrap-npm.git"
   },
   "keywords": [
     "npm",
@@ -37,7 +37,7 @@
   "author": "jusopi <jwopitz@gmail.com> (http://jwopitz.wordpress.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Neohapsis/angular-bootstrap-npm/issues"
+    "url": "https://github.com/jusopi/angular-bootstrap-npm/issues"
   },
-  "homepage": "https://github.com/Neohapsis/angular-bootstrap-npm"
+  "homepage": "https://github.com/jusopi/angular-bootstrap-npm"
 }
