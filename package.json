@@ -1,6 +1,6 @@
 {
   "name": "angular-bootstrap-npm",
-  "version": "0.14.2",
+  "version": "0.14.3",
   "description": "An NPM package for using UI.Bootstrap directives with Node projects (via Browserify, etc.)",
   "main": "./dist/angular-bootstrap-tpls.js",
   "devDependencies": {
