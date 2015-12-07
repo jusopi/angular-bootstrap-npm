@@ -1,6 +1,14 @@
+#### update - Dec 7, 2015
+
+*Now that the angular-ui team has [published ui.bootstrap to npm](https://www.npmjs.com/package/angular-ui-bootstrap), this project will no longer be updated and is now considered __deprecated__.*
+
+*__[olsonpm](https://github.com/olsonpm)__ has decided to fork and maintain this project at [olsonpm/angular-bootstrap-npm](https://github.com/olsonpm/angular-bootstrap-npm)*
+
 #### update - Oct 10, 2015
 
 *This repo has been relocated to [jusopi/angular-bootstrap-npm](https://github.com/jusopi/angular-bootstrap-npm)*
+
+---
 
 # angular-bootstrap-npm
 
